@@ -1,0 +1,12 @@
+[project]
+name = "evacs"
+version = "0.1.0"
+description = "Emergency Vehicle Audio Classification System (baseline)"
+requires-python = ">=3.10"
+dependencies = ["numpy", "torch", "pyyaml"]
+
+[project.scripts]
+evacs = "evacs.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
